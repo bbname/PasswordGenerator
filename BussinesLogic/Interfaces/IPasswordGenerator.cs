@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BussinesLogic.Interfaces
 {
-    interface IPasswordGenerator : IBuilderPasswordGeneratorParameters, IBuilderPasswordGeneratorRounds
+    interface IPasswordGenerator
     {
         string GetPassword();
         //string GetParams(int signsNumber, params bool[] sign);

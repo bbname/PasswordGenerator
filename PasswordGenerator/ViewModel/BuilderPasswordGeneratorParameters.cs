@@ -18,7 +18,7 @@ namespace PasswordGenerator.ViewModel
         public int GetPasswordLength()
         {
             int passwordLength = Convert.ToInt32(_formMain.numericUpDownPasswordLength.Value);
-            _formMain.Dispose();
+            //_formMain.Dispose();
             return passwordLength;
         }
 
