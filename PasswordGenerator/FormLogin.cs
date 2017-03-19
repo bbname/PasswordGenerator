@@ -34,7 +34,7 @@ namespace PasswordGenerator
 
             if(exists)
             {
-                MessageBox.Show("Istnieje.");
+                //MessageBox.Show("Istnieje.");
                 _formMain = new FormMain();
                 _formMain.Show();
             }

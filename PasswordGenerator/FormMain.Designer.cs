@@ -43,7 +43,7 @@
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonClearAll = new System.Windows.Forms.Button();
             this.checkBoxSmallLetters = new System.Windows.Forms.CheckBox();
-            this.checkBoxCapitalLetter = new System.Windows.Forms.CheckBox();
+            this.checkBoxCapitalLetters = new System.Windows.Forms.CheckBox();
             this.checkBoxSmallPolishLetters = new System.Windows.Forms.CheckBox();
             this.checkBoxCapitalPolishLetters = new System.Windows.Forms.CheckBox();
             this.checkBoxSpecialSigns = new System.Windows.Forms.CheckBox();
@@ -182,15 +182,15 @@
             this.checkBoxSmallLetters.Text = "Małe litery";
             this.checkBoxSmallLetters.UseVisualStyleBackColor = true;
             // 
-            // checkBoxCapitalLetter
+            // checkBoxCapitalLetters
             // 
-            this.checkBoxCapitalLetter.AutoSize = true;
-            this.checkBoxCapitalLetter.Location = new System.Drawing.Point(362, 49);
-            this.checkBoxCapitalLetter.Name = "checkBoxCapitalLetter";
-            this.checkBoxCapitalLetter.Size = new System.Drawing.Size(85, 17);
-            this.checkBoxCapitalLetter.TabIndex = 18;
-            this.checkBoxCapitalLetter.Text = "Wielkie litery";
-            this.checkBoxCapitalLetter.UseVisualStyleBackColor = true;
+            this.checkBoxCapitalLetters.AutoSize = true;
+            this.checkBoxCapitalLetters.Location = new System.Drawing.Point(362, 49);
+            this.checkBoxCapitalLetters.Name = "checkBoxCapitalLetters";
+            this.checkBoxCapitalLetters.Size = new System.Drawing.Size(85, 17);
+            this.checkBoxCapitalLetters.TabIndex = 18;
+            this.checkBoxCapitalLetters.Text = "Wielkie litery";
+            this.checkBoxCapitalLetters.UseVisualStyleBackColor = true;
             // 
             // checkBoxSmallPolishLetters
             // 
@@ -252,7 +252,7 @@
             this.Controls.Add(this.checkBoxSpecialSigns);
             this.Controls.Add(this.checkBoxCapitalPolishLetters);
             this.Controls.Add(this.checkBoxSmallPolishLetters);
-            this.Controls.Add(this.checkBoxCapitalLetter);
+            this.Controls.Add(this.checkBoxCapitalLetters);
             this.Controls.Add(this.checkBoxSmallLetters);
             this.Controls.Add(this.buttonClearAll);
             this.Controls.Add(this.buttonSave);
@@ -291,12 +291,12 @@
         public System.Windows.Forms.Label labelPlaceName;
         public System.Windows.Forms.Label labelAdditionalOptions;
         public System.Windows.Forms.TextBox textBoxGeneratedPassword;
-        private System.Windows.Forms.CheckBox checkBoxSmallLetters;
-        private System.Windows.Forms.CheckBox checkBoxCapitalLetter;
-        private System.Windows.Forms.CheckBox checkBoxSmallPolishLetters;
-        private System.Windows.Forms.CheckBox checkBoxCapitalPolishLetters;
-        private System.Windows.Forms.CheckBox checkBoxSpecialSigns;
-        private System.Windows.Forms.CheckBox checkBoxAdditionalLogin;
-        private System.Windows.Forms.CheckBox checkBoxAdditionalEmail;
+        public System.Windows.Forms.CheckBox checkBoxSmallLetters;
+        public System.Windows.Forms.CheckBox checkBoxCapitalLetters;
+        public System.Windows.Forms.CheckBox checkBoxSmallPolishLetters;
+        public System.Windows.Forms.CheckBox checkBoxCapitalPolishLetters;
+        public System.Windows.Forms.CheckBox checkBoxSpecialSigns;
+        public System.Windows.Forms.CheckBox checkBoxAdditionalLogin;
+        public System.Windows.Forms.CheckBox checkBoxAdditionalEmail;
     }
 }

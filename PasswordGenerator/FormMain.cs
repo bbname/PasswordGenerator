@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PasswordGenerator.ViewModel;
 
 namespace PasswordGenerator
 {
@@ -15,6 +16,15 @@ namespace PasswordGenerator
         public FormMain()
         {
             InitializeComponent();
+            SetDefaultSettings();
+        }
+
+        private void SetDefaultSettings()
+        {
+            ControllsDefaultSettings.ActivateCheckBox(checkBoxSmallLetters);
+            ControllsDefaultSettings.ActivateCheckBox(checkBoxCapitalLetters);
+            ControllsDefaultSettings.ActivateCheckBox(checkBoxSpecialSigns);
+            ControllsDefaultSettings.SetNumberNumericUpDown(numericUpDownPasswordLength);
         }
 
     }
