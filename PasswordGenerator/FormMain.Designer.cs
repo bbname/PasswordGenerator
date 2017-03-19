@@ -35,15 +35,20 @@
             this.labelAdditionalOptions = new System.Windows.Forms.Label();
             this.numericUpDownPasswordLength = new System.Windows.Forms.NumericUpDown();
             this.textBoxGeneratedPassword = new System.Windows.Forms.TextBox();
-            this.checkedListBoxSignsTypes = new System.Windows.Forms.CheckedListBox();
             this.textBoxPlaceName = new System.Windows.Forms.TextBox();
             this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.labelLogin = new System.Windows.Forms.Label();
             this.textBoxEmail = new System.Windows.Forms.TextBox();
             this.labelEmail = new System.Windows.Forms.Label();
-            this.checkedListBoxAdditionalOptions = new System.Windows.Forms.CheckedListBox();
             this.buttonSave = new System.Windows.Forms.Button();
             this.buttonClearAll = new System.Windows.Forms.Button();
+            this.checkBoxSmallLetters = new System.Windows.Forms.CheckBox();
+            this.checkBoxCapitalLetter = new System.Windows.Forms.CheckBox();
+            this.checkBoxSmallPolishLetters = new System.Windows.Forms.CheckBox();
+            this.checkBoxCapitalPolishLetters = new System.Windows.Forms.CheckBox();
+            this.checkBoxSpecialSigns = new System.Windows.Forms.CheckBox();
+            this.checkBoxAdditionalLogin = new System.Windows.Forms.CheckBox();
+            this.checkBoxAdditionalEmail = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPasswordLength)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +64,7 @@
             // labelSignsTypes
             // 
             this.labelSignsTypes.AutoSize = true;
-            this.labelSignsTypes.Location = new System.Drawing.Point(390, 8);
+            this.labelSignsTypes.Location = new System.Drawing.Point(359, 10);
             this.labelSignsTypes.Name = "labelSignsTypes";
             this.labelSignsTypes.Size = new System.Drawing.Size(76, 13);
             this.labelSignsTypes.TabIndex = 1;
@@ -86,7 +91,7 @@
             // labelAdditionalOptions
             // 
             this.labelAdditionalOptions.AutoSize = true;
-            this.labelAdditionalOptions.Location = new System.Drawing.Point(417, 121);
+            this.labelAdditionalOptions.Location = new System.Drawing.Point(359, 138);
             this.labelAdditionalOptions.Name = "labelAdditionalOptions";
             this.labelAdditionalOptions.Size = new System.Drawing.Size(49, 13);
             this.labelAdditionalOptions.TabIndex = 5;
@@ -106,20 +111,6 @@
             this.textBoxGeneratedPassword.Name = "textBoxGeneratedPassword";
             this.textBoxGeneratedPassword.Size = new System.Drawing.Size(211, 95);
             this.textBoxGeneratedPassword.TabIndex = 7;
-            // 
-            // checkedListBoxSignsTypes
-            // 
-            this.checkedListBoxSignsTypes.FormattingEnabled = true;
-            this.checkedListBoxSignsTypes.Items.AddRange(new object[] {
-            "Małe litery",
-            "Wielkie litery",
-            "Male polskie litery",
-            "Wielkie polskie litery",
-            "Znaki specjalnie"});
-            this.checkedListBoxSignsTypes.Location = new System.Drawing.Point(332, 24);
-            this.checkedListBoxSignsTypes.Name = "checkedListBoxSignsTypes";
-            this.checkedListBoxSignsTypes.Size = new System.Drawing.Size(134, 94);
-            this.checkedListBoxSignsTypes.TabIndex = 8;
             // 
             // textBoxPlaceName
             // 
@@ -163,49 +154,113 @@
             this.labelEmail.TabIndex = 12;
             this.labelEmail.Text = "Email (opcjonalne):";
             // 
-            // checkedListBoxAdditionalOptions
-            // 
-            this.checkedListBoxAdditionalOptions.FormattingEnabled = true;
-            this.checkedListBoxAdditionalOptions.Items.AddRange(new object[] {
-            "Login",
-            "Email"});
-            this.checkedListBoxAdditionalOptions.Location = new System.Drawing.Point(332, 137);
-            this.checkedListBoxAdditionalOptions.Name = "checkedListBoxAdditionalOptions";
-            this.checkedListBoxAdditionalOptions.Size = new System.Drawing.Size(134, 34);
-            this.checkedListBoxAdditionalOptions.TabIndex = 14;
-            // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(332, 233);
+            this.buttonSave.Location = new System.Drawing.Point(357, 233);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(134, 48);
+            this.buttonSave.Size = new System.Drawing.Size(126, 48);
             this.buttonSave.TabIndex = 15;
             this.buttonSave.Text = "Zapisz";
             this.buttonSave.UseVisualStyleBackColor = true;
             // 
             // buttonClearAll
             // 
-            this.buttonClearAll.Location = new System.Drawing.Point(332, 179);
+            this.buttonClearAll.Location = new System.Drawing.Point(357, 200);
             this.buttonClearAll.Name = "buttonClearAll";
-            this.buttonClearAll.Size = new System.Drawing.Size(134, 48);
+            this.buttonClearAll.Size = new System.Drawing.Size(126, 27);
             this.buttonClearAll.TabIndex = 16;
             this.buttonClearAll.Text = "Wyczyść wszystko";
             this.buttonClearAll.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSmallLetters
+            // 
+            this.checkBoxSmallLetters.AutoSize = true;
+            this.checkBoxSmallLetters.Location = new System.Drawing.Point(362, 26);
+            this.checkBoxSmallLetters.Name = "checkBoxSmallLetters";
+            this.checkBoxSmallLetters.Size = new System.Drawing.Size(75, 17);
+            this.checkBoxSmallLetters.TabIndex = 17;
+            this.checkBoxSmallLetters.Text = "Małe litery";
+            this.checkBoxSmallLetters.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCapitalLetter
+            // 
+            this.checkBoxCapitalLetter.AutoSize = true;
+            this.checkBoxCapitalLetter.Location = new System.Drawing.Point(362, 49);
+            this.checkBoxCapitalLetter.Name = "checkBoxCapitalLetter";
+            this.checkBoxCapitalLetter.Size = new System.Drawing.Size(85, 17);
+            this.checkBoxCapitalLetter.TabIndex = 18;
+            this.checkBoxCapitalLetter.Text = "Wielkie litery";
+            this.checkBoxCapitalLetter.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSmallPolishLetters
+            // 
+            this.checkBoxSmallPolishLetters.AutoSize = true;
+            this.checkBoxSmallPolishLetters.Location = new System.Drawing.Point(362, 72);
+            this.checkBoxSmallPolishLetters.Name = "checkBoxSmallPolishLetters";
+            this.checkBoxSmallPolishLetters.Size = new System.Drawing.Size(111, 17);
+            this.checkBoxSmallPolishLetters.TabIndex = 19;
+            this.checkBoxSmallPolishLetters.Text = "Małe polskie litery";
+            this.checkBoxSmallPolishLetters.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxCapitalPolishLetters
+            // 
+            this.checkBoxCapitalPolishLetters.AutoSize = true;
+            this.checkBoxCapitalPolishLetters.Location = new System.Drawing.Point(362, 95);
+            this.checkBoxCapitalPolishLetters.Name = "checkBoxCapitalPolishLetters";
+            this.checkBoxCapitalPolishLetters.Size = new System.Drawing.Size(121, 17);
+            this.checkBoxCapitalPolishLetters.TabIndex = 20;
+            this.checkBoxCapitalPolishLetters.Text = "Wielkie polskie litery";
+            this.checkBoxCapitalPolishLetters.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxSpecialSigns
+            // 
+            this.checkBoxSpecialSigns.AutoSize = true;
+            this.checkBoxSpecialSigns.Location = new System.Drawing.Point(362, 118);
+            this.checkBoxSpecialSigns.Name = "checkBoxSpecialSigns";
+            this.checkBoxSpecialSigns.Size = new System.Drawing.Size(101, 17);
+            this.checkBoxSpecialSigns.TabIndex = 21;
+            this.checkBoxSpecialSigns.Text = "Znaki specjalne";
+            this.checkBoxSpecialSigns.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAdditionalLogin
+            // 
+            this.checkBoxAdditionalLogin.AutoSize = true;
+            this.checkBoxAdditionalLogin.Location = new System.Drawing.Point(362, 154);
+            this.checkBoxAdditionalLogin.Name = "checkBoxAdditionalLogin";
+            this.checkBoxAdditionalLogin.Size = new System.Drawing.Size(52, 17);
+            this.checkBoxAdditionalLogin.TabIndex = 22;
+            this.checkBoxAdditionalLogin.Text = "Login";
+            this.checkBoxAdditionalLogin.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxAdditionalEmail
+            // 
+            this.checkBoxAdditionalEmail.AutoSize = true;
+            this.checkBoxAdditionalEmail.Location = new System.Drawing.Point(362, 177);
+            this.checkBoxAdditionalEmail.Name = "checkBoxAdditionalEmail";
+            this.checkBoxAdditionalEmail.Size = new System.Drawing.Size(51, 17);
+            this.checkBoxAdditionalEmail.TabIndex = 23;
+            this.checkBoxAdditionalEmail.Text = "Email";
+            this.checkBoxAdditionalEmail.UseVisualStyleBackColor = true;
             // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 306);
+            this.Controls.Add(this.checkBoxAdditionalEmail);
+            this.Controls.Add(this.checkBoxAdditionalLogin);
+            this.Controls.Add(this.checkBoxSpecialSigns);
+            this.Controls.Add(this.checkBoxCapitalPolishLetters);
+            this.Controls.Add(this.checkBoxSmallPolishLetters);
+            this.Controls.Add(this.checkBoxCapitalLetter);
+            this.Controls.Add(this.checkBoxSmallLetters);
             this.Controls.Add(this.buttonClearAll);
             this.Controls.Add(this.buttonSave);
-            this.Controls.Add(this.checkedListBoxAdditionalOptions);
             this.Controls.Add(this.textBoxEmail);
             this.Controls.Add(this.labelEmail);
             this.Controls.Add(this.textBoxLogin);
             this.Controls.Add(this.labelLogin);
             this.Controls.Add(this.textBoxPlaceName);
-            this.Controls.Add(this.checkedListBoxSignsTypes);
             this.Controls.Add(this.textBoxGeneratedPassword);
             this.Controls.Add(this.numericUpDownPasswordLength);
             this.Controls.Add(this.labelAdditionalOptions);
@@ -228,7 +283,6 @@
         public System.Windows.Forms.Label labelLogin;
         public System.Windows.Forms.TextBox textBoxEmail;
         public System.Windows.Forms.Label labelEmail;
-        public System.Windows.Forms.CheckedListBox checkedListBoxAdditionalOptions;
         public System.Windows.Forms.Button buttonSave;
         public System.Windows.Forms.Button buttonClearAll;
         public System.Windows.Forms.Label labelPasswordLength;
@@ -237,6 +291,12 @@
         public System.Windows.Forms.Label labelPlaceName;
         public System.Windows.Forms.Label labelAdditionalOptions;
         public System.Windows.Forms.TextBox textBoxGeneratedPassword;
-        public System.Windows.Forms.CheckedListBox checkedListBoxSignsTypes;
+        private System.Windows.Forms.CheckBox checkBoxSmallLetters;
+        private System.Windows.Forms.CheckBox checkBoxCapitalLetter;
+        private System.Windows.Forms.CheckBox checkBoxSmallPolishLetters;
+        private System.Windows.Forms.CheckBox checkBoxCapitalPolishLetters;
+        private System.Windows.Forms.CheckBox checkBoxSpecialSigns;
+        private System.Windows.Forms.CheckBox checkBoxAdditionalLogin;
+        private System.Windows.Forms.CheckBox checkBoxAdditionalEmail;
     }
 }
