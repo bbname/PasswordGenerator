@@ -1,0 +1,10 @@
+C:\Users\bb_name\Desktop\backup\PasswordGenerator\BussinesLogic\bin\Debug\BussinesLogic.dll
+C:\Users\bb_name\Desktop\backup\PasswordGenerator\BussinesLogic\bin\Debug\BussinesLogic.pdb
+C:\Users\bb_name\Desktop\backup\PasswordGenerator\BussinesLogic\obj\Debug\BussinesLogic.csprojResolveAssemblyReference.cache
+C:\Users\bb_name\Desktop\backup\PasswordGenerator\BussinesLogic\obj\Debug\BussinesLogic.dll
+C:\Users\bb_name\Desktop\backup\PasswordGenerator\BussinesLogic\obj\Debug\BussinesLogic.pdb
+C:\Users\PAN BB\Documents\Visual Studio 2015\Projects\PasswordGenerator\BussinesLogic\bin\Debug\BussinesLogic.dll
+C:\Users\PAN BB\Documents\Visual Studio 2015\Projects\PasswordGenerator\BussinesLogic\bin\Debug\BussinesLogic.pdb
+C:\Users\PAN BB\Documents\Visual Studio 2015\Projects\PasswordGenerator\BussinesLogic\obj\Debug\BussinesLogic.csprojResolveAssemblyReference.cache
+C:\Users\PAN BB\Documents\Visual Studio 2015\Projects\PasswordGenerator\BussinesLogic\obj\Debug\BussinesLogic.dll
+C:\Users\PAN BB\Documents\Visual Studio 2015\Projects\PasswordGenerator\BussinesLogic\obj\Debug\BussinesLogic.pdb
