@@ -26,3 +26,17 @@ C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\bin\Debug\EntityFramework
 C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\obj\Debug\DataServices.csprojResolveAssemblyReference.cache
 C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\obj\Debug\DataServices.dll
 C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\obj\Debug\DataServices.pdb
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\DataServices.dll.config
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\DataServices.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\DataServices.pdb
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\BussinesLogic.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.Extended.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\BussinesLogic.pdb
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.xml
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.Extended.xml
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\obj\Debug\DataServices.csprojResolveAssemblyReference.cache
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\obj\Debug\DataServices.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\obj\Debug\DataServices.pdb

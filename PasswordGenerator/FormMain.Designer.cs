@@ -49,6 +49,7 @@
             this.checkBoxSpecialSigns = new System.Windows.Forms.CheckBox();
             this.checkBoxAdditionalLogin = new System.Windows.Forms.CheckBox();
             this.checkBoxAdditionalEmail = new System.Windows.Forms.CheckBox();
+            this.buttonGenerate = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPasswordLength)).BeginInit();
             this.SuspendLayout();
             // 
@@ -242,11 +243,21 @@
             this.checkBoxAdditionalEmail.Text = "Email";
             this.checkBoxAdditionalEmail.UseVisualStyleBackColor = true;
             // 
+            // buttonGenerate
+            // 
+            this.buttonGenerate.Location = new System.Drawing.Point(15, 51);
+            this.buttonGenerate.Name = "buttonGenerate";
+            this.buttonGenerate.Size = new System.Drawing.Size(78, 38);
+            this.buttonGenerate.TabIndex = 24;
+            this.buttonGenerate.Text = "Generuj";
+            this.buttonGenerate.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 306);
+            this.Controls.Add(this.buttonGenerate);
             this.Controls.Add(this.checkBoxAdditionalEmail);
             this.Controls.Add(this.checkBoxAdditionalLogin);
             this.Controls.Add(this.checkBoxSpecialSigns);
@@ -298,5 +309,6 @@
         public System.Windows.Forms.CheckBox checkBoxSpecialSigns;
         public System.Windows.Forms.CheckBox checkBoxAdditionalLogin;
         public System.Windows.Forms.CheckBox checkBoxAdditionalEmail;
+        public System.Windows.Forms.Button buttonGenerate;
     }
 }

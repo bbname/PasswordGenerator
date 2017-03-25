@@ -19,7 +19,7 @@ namespace BussinesLogic
         }
         public string GetPassword()
         {
-            throw new NotImplementedException();
+            return "";
         }
     }
 }

@@ -16,10 +16,13 @@ namespace PasswordGenerator
         public FormMain()
         {
             InitializeComponent();
-            SetDefaultSettings();
+            SetControllsDefaultSettings();
         }
 
-        private void SetDefaultSettings()
+        /// <summary>
+        /// Setting default values for choosen controlls in formMain.
+        /// </summary>
+        private void SetControllsDefaultSettings()
         {
             ControllsDefaultSettings.ActivateCheckBox(checkBoxSmallLetters);
             ControllsDefaultSettings.ActivateCheckBox(checkBoxCapitalLetters);
