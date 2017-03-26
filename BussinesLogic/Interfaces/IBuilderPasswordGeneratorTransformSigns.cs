@@ -8,6 +8,6 @@ namespace BussinesLogic.Interfaces
 {
     public interface IBuilderPasswordGeneratorTransformSigns
     {
-        int[] GetSignsIndexes();
+        int[,] GetSignIndexes();
     }
 }

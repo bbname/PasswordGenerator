@@ -8,7 +8,7 @@ namespace DataServices.Data
 {
     public enum SignTypes
     {
-        SmallLetters,
+        SmallLetters = 0,
         CapitalLetters,
         SmallPolishLetters,
         CapitalPolishLetters,
