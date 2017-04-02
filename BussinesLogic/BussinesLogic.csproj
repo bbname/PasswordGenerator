@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuilderPasswordGeneratorRandomNumbers.cs" />
+    <Compile Include="BuilderPasswordGeneratorTransformedSigns.cs" />
     <Compile Include="BuilderPasswordGeneratorTransformSigns.cs" />
     <Compile Include="Interfaces\IBuilderPasswordGeneratorParameters.cs" />
     <Compile Include="Interfaces\IBuilderPasswordGeneratorRandomNumbers.cs" />
