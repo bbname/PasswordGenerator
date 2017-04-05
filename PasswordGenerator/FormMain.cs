@@ -27,6 +27,7 @@ namespace PasswordGenerator
             ControllsDefaultSettings.ActivateCheckBox(checkBoxSmallLetters);
             ControllsDefaultSettings.ActivateCheckBox(checkBoxCapitalLetters);
             ControllsDefaultSettings.ActivateCheckBox(checkBoxSpecialSigns);
+            ControllsDefaultSettings.ActivateCheckBox(checkBoxDigits);
             ControllsDefaultSettings.SetNumberNumericUpDown(numericUpDownPasswordLength);
         }
 

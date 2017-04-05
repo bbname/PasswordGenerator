@@ -41,7 +41,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BuilderPasswordGeneratorRandomNumbers.cs" />
-    <Compile Include="BuilderPasswordGeneratorTransformedSigns.cs" />
     <Compile Include="BuilderPasswordGeneratorTransformSigns.cs" />
     <Compile Include="Interfaces\IBuilderPasswordGeneratorParameters.cs" />
     <Compile Include="Interfaces\IBuilderPasswordGeneratorRandomNumbers.cs" />
@@ -50,6 +49,12 @@
     <Compile Include="Login.cs" />
     <Compile Include="PasswordGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Project>{00d56625-354a-4a32-b761-276bd342fdc3}</Project>
+      <Name>DataServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

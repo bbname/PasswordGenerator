@@ -24,7 +24,7 @@ namespace PasswordGenerator.ViewModel
 
         public bool[] GetSignsTypes()
         {
-            bool[] signsTypes = new bool[5];
+            bool[] signsTypes = new bool[6];
             
             return signsTypes;
         }

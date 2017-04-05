@@ -50,6 +50,7 @@
             this.checkBoxAdditionalLogin = new System.Windows.Forms.CheckBox();
             this.checkBoxAdditionalEmail = new System.Windows.Forms.CheckBox();
             this.buttonGenerate = new System.Windows.Forms.Button();
+            this.checkBoxDigits = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPasswordLength)).BeginInit();
             this.SuspendLayout();
             // 
@@ -92,7 +93,7 @@
             // labelAdditionalOptions
             // 
             this.labelAdditionalOptions.AutoSize = true;
-            this.labelAdditionalOptions.Location = new System.Drawing.Point(359, 138);
+            this.labelAdditionalOptions.Location = new System.Drawing.Point(359, 161);
             this.labelAdditionalOptions.Name = "labelAdditionalOptions";
             this.labelAdditionalOptions.Size = new System.Drawing.Size(49, 13);
             this.labelAdditionalOptions.TabIndex = 5;
@@ -157,18 +158,18 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(357, 233);
+            this.buttonSave.Location = new System.Drawing.Point(362, 256);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(126, 48);
+            this.buttonSave.Size = new System.Drawing.Size(126, 24);
             this.buttonSave.TabIndex = 15;
             this.buttonSave.Text = "Zapisz";
             this.buttonSave.UseVisualStyleBackColor = true;
             // 
             // buttonClearAll
             // 
-            this.buttonClearAll.Location = new System.Drawing.Point(357, 200);
+            this.buttonClearAll.Location = new System.Drawing.Point(362, 229);
             this.buttonClearAll.Name = "buttonClearAll";
-            this.buttonClearAll.Size = new System.Drawing.Size(126, 27);
+            this.buttonClearAll.Size = new System.Drawing.Size(126, 26);
             this.buttonClearAll.TabIndex = 16;
             this.buttonClearAll.Text = "Wyczyść wszystko";
             this.buttonClearAll.UseVisualStyleBackColor = true;
@@ -226,7 +227,7 @@
             // checkBoxAdditionalLogin
             // 
             this.checkBoxAdditionalLogin.AutoSize = true;
-            this.checkBoxAdditionalLogin.Location = new System.Drawing.Point(362, 154);
+            this.checkBoxAdditionalLogin.Location = new System.Drawing.Point(362, 177);
             this.checkBoxAdditionalLogin.Name = "checkBoxAdditionalLogin";
             this.checkBoxAdditionalLogin.Size = new System.Drawing.Size(52, 17);
             this.checkBoxAdditionalLogin.TabIndex = 22;
@@ -236,7 +237,7 @@
             // checkBoxAdditionalEmail
             // 
             this.checkBoxAdditionalEmail.AutoSize = true;
-            this.checkBoxAdditionalEmail.Location = new System.Drawing.Point(362, 177);
+            this.checkBoxAdditionalEmail.Location = new System.Drawing.Point(362, 200);
             this.checkBoxAdditionalEmail.Name = "checkBoxAdditionalEmail";
             this.checkBoxAdditionalEmail.Size = new System.Drawing.Size(51, 17);
             this.checkBoxAdditionalEmail.TabIndex = 23;
@@ -252,11 +253,22 @@
             this.buttonGenerate.Text = "Generuj";
             this.buttonGenerate.UseVisualStyleBackColor = true;
             // 
+            // checkBoxDigits
+            // 
+            this.checkBoxDigits.AutoSize = true;
+            this.checkBoxDigits.Location = new System.Drawing.Point(362, 141);
+            this.checkBoxDigits.Name = "checkBoxDigits";
+            this.checkBoxDigits.Size = new System.Drawing.Size(49, 17);
+            this.checkBoxDigits.TabIndex = 25;
+            this.checkBoxDigits.Text = "Cyfry";
+            this.checkBoxDigits.UseVisualStyleBackColor = true;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 306);
+            this.Controls.Add(this.checkBoxDigits);
             this.Controls.Add(this.buttonGenerate);
             this.Controls.Add(this.checkBoxAdditionalEmail);
             this.Controls.Add(this.checkBoxAdditionalLogin);
@@ -310,5 +322,6 @@
         public System.Windows.Forms.CheckBox checkBoxAdditionalLogin;
         public System.Windows.Forms.CheckBox checkBoxAdditionalEmail;
         public System.Windows.Forms.Button buttonGenerate;
+        public System.Windows.Forms.CheckBox checkBoxDigits;
     }
 }

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DataServices.Data
+﻿namespace DataServices.Data
 {
     public enum SignTypes
     {
@@ -12,6 +6,7 @@ namespace DataServices.Data
         CapitalLetters,
         SmallPolishLetters,
         CapitalPolishLetters,
-        SpecialSigns
+        SpecialSigns,
+        Digits
     }
 }

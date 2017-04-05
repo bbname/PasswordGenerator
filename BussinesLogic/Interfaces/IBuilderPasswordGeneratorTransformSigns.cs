@@ -1,13 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace BussinesLogic.Interfaces
 {
     public interface IBuilderPasswordGeneratorTransformSigns
     {
-        int[,] GetSignIndexes();
+        IEnumerable<int> GetIndexes();
+        IEnumerable<char> GetSigns();
+        int GetIndexBySign(char sign);
+        char GetSignByIndex(int index);
     }
 }
