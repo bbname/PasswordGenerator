@@ -9,6 +9,6 @@ namespace BussinesLogic.Interfaces
     public interface IBuilderPasswordGeneratorParameters
     {
         int GetPasswordLength();
-        bool[] GetSignsTypes();
+        bool[] GetSignTypes();
     }
 }

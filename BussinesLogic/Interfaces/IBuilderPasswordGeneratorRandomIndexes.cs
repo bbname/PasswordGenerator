@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace BussinesLogic.Interfaces
 {
-    interface IBuilderPasswordGeneratorRandomNumbers
+    interface IBuilderPasswordGeneratorRandomIndexes
     {
 
-        int[] GetRandomNumbers();
+        IEnumerable<int> GetRandomIndexes();
 
     }
 }

@@ -40,10 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BuilderPasswordGeneratorRandomNumbers.cs" />
+    <Compile Include="BuilderPasswordGeneratorRandomIndexes.cs" />
     <Compile Include="BuilderPasswordGeneratorTransformSigns.cs" />
     <Compile Include="Interfaces\IBuilderPasswordGeneratorParameters.cs" />
-    <Compile Include="Interfaces\IBuilderPasswordGeneratorRandomNumbers.cs" />
+    <Compile Include="Interfaces\IBuilderPasswordGeneratorRandomIndexes.cs" />
     <Compile Include="Interfaces\IBuilderPasswordGeneratorTransformSigns.cs" />
     <Compile Include="Interfaces\IPasswordGenerator.cs" />
     <Compile Include="Login.cs" />

@@ -22,7 +22,7 @@ namespace PasswordGenerator.ViewModel
             return passwordLength;
         }
 
-        public bool[] GetSignsTypes()
+        public bool[] GetSignTypes()
         {
             bool[] signsTypes = new bool[6];
             
