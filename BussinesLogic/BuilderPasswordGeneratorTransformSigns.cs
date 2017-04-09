@@ -18,6 +18,7 @@ namespace BussinesLogic
             TransformSigns();
         }
 
+
         public char GetSignByIndex(int index)
         {
             var sign = _signsIndexes.FirstOrDefault(x => x.Value == index).Key;
@@ -30,6 +31,12 @@ namespace BussinesLogic
             return index;
         }
 
+        public int GetLastIndex()
+        {
+            var lastIndex = _signsIndexes.LastOrDefault().Value;
+            return lastIndex;
+        }
+
         public IEnumerable<int> GetIndexes()
         {
             return _signsIndexes.Values;
@@ -38,6 +45,18 @@ namespace BussinesLogic
         public IEnumerable<char> GetSigns()
         {
             return _signsIndexes.Keys;
+        }
+
+        public ICollection<char> GetSignsByIndexes(IEnumerable<int> indexes)
+        {
+            List<char> signs = new List<char>(indexes.Count());
+
+            foreach (var index in indexes)
+            {
+                signs.Add(GetSignByIndex(index));
+            }
+
+            return signs;
         }
 
         public char[] GetSignsOfType(SignTypes signTypes)

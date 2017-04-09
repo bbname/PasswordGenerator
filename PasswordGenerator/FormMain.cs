@@ -31,5 +31,12 @@ namespace PasswordGenerator
             ControllsDefaultSettings.SetNumberNumericUpDown(numericUpDownPasswordLength);
         }
 
+        private void buttonGenerate_Click(object sender, EventArgs e)
+        {
+            BuilderPasswordGeneratorParameters pgParameters = new BuilderPasswordGeneratorParameters(this);
+            GeneratePassword generatePassword = new GeneratePassword(pgParameters);
+
+            textBoxGeneratedPassword.Text = generatePassword.GetPassword();
+        }
     }
 }

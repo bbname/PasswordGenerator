@@ -22,3 +22,7 @@ C:\Users\PAN BB\Desktop\PasswordGenerator\BussinesLogic\bin\Debug\DataServices.d
 C:\Users\PAN BB\Desktop\PasswordGenerator\BussinesLogic\bin\Debug\EntityFramework.dll
 C:\Users\PAN BB\Desktop\PasswordGenerator\BussinesLogic\bin\Debug\DataServices.pdb
 C:\Users\PAN BB\Desktop\PasswordGenerator\BussinesLogic\bin\Debug\EntityFramework.xml
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogic\bin\Debug\DataServices.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogic\bin\Debug\EntityFramework.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogic\bin\Debug\DataServices.pdb
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogic\bin\Debug\EntityFramework.xml

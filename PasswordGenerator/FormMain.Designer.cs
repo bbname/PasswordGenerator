@@ -51,7 +51,9 @@
             this.checkBoxAdditionalEmail = new System.Windows.Forms.CheckBox();
             this.buttonGenerate = new System.Windows.Forms.Button();
             this.checkBoxDigits = new System.Windows.Forms.CheckBox();
+            this.groupBoxSignTypes = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPasswordLength)).BeginInit();
+            this.groupBoxSignTypes.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelPasswordLength
@@ -93,7 +95,7 @@
             // labelAdditionalOptions
             // 
             this.labelAdditionalOptions.AutoSize = true;
-            this.labelAdditionalOptions.Location = new System.Drawing.Point(359, 161);
+            this.labelAdditionalOptions.Location = new System.Drawing.Point(359, 179);
             this.labelAdditionalOptions.Name = "labelAdditionalOptions";
             this.labelAdditionalOptions.Size = new System.Drawing.Size(49, 13);
             this.labelAdditionalOptions.TabIndex = 5;
@@ -158,18 +160,18 @@
             // 
             // buttonSave
             // 
-            this.buttonSave.Location = new System.Drawing.Point(362, 256);
+            this.buttonSave.Location = new System.Drawing.Point(362, 236);
             this.buttonSave.Name = "buttonSave";
-            this.buttonSave.Size = new System.Drawing.Size(126, 24);
+            this.buttonSave.Size = new System.Drawing.Size(55, 44);
             this.buttonSave.TabIndex = 15;
             this.buttonSave.Text = "Zapisz";
             this.buttonSave.UseVisualStyleBackColor = true;
             // 
             // buttonClearAll
             // 
-            this.buttonClearAll.Location = new System.Drawing.Point(362, 229);
+            this.buttonClearAll.Location = new System.Drawing.Point(423, 236);
             this.buttonClearAll.Name = "buttonClearAll";
-            this.buttonClearAll.Size = new System.Drawing.Size(126, 26);
+            this.buttonClearAll.Size = new System.Drawing.Size(73, 44);
             this.buttonClearAll.TabIndex = 16;
             this.buttonClearAll.Text = "Wyczyść wszystko";
             this.buttonClearAll.UseVisualStyleBackColor = true;
@@ -177,7 +179,7 @@
             // checkBoxSmallLetters
             // 
             this.checkBoxSmallLetters.AutoSize = true;
-            this.checkBoxSmallLetters.Location = new System.Drawing.Point(362, 26);
+            this.checkBoxSmallLetters.Location = new System.Drawing.Point(6, 14);
             this.checkBoxSmallLetters.Name = "checkBoxSmallLetters";
             this.checkBoxSmallLetters.Size = new System.Drawing.Size(75, 17);
             this.checkBoxSmallLetters.TabIndex = 17;
@@ -187,7 +189,7 @@
             // checkBoxCapitalLetters
             // 
             this.checkBoxCapitalLetters.AutoSize = true;
-            this.checkBoxCapitalLetters.Location = new System.Drawing.Point(362, 49);
+            this.checkBoxCapitalLetters.Location = new System.Drawing.Point(6, 37);
             this.checkBoxCapitalLetters.Name = "checkBoxCapitalLetters";
             this.checkBoxCapitalLetters.Size = new System.Drawing.Size(85, 17);
             this.checkBoxCapitalLetters.TabIndex = 18;
@@ -197,7 +199,7 @@
             // checkBoxSmallPolishLetters
             // 
             this.checkBoxSmallPolishLetters.AutoSize = true;
-            this.checkBoxSmallPolishLetters.Location = new System.Drawing.Point(362, 72);
+            this.checkBoxSmallPolishLetters.Location = new System.Drawing.Point(6, 60);
             this.checkBoxSmallPolishLetters.Name = "checkBoxSmallPolishLetters";
             this.checkBoxSmallPolishLetters.Size = new System.Drawing.Size(111, 17);
             this.checkBoxSmallPolishLetters.TabIndex = 19;
@@ -207,7 +209,7 @@
             // checkBoxCapitalPolishLetters
             // 
             this.checkBoxCapitalPolishLetters.AutoSize = true;
-            this.checkBoxCapitalPolishLetters.Location = new System.Drawing.Point(362, 95);
+            this.checkBoxCapitalPolishLetters.Location = new System.Drawing.Point(6, 83);
             this.checkBoxCapitalPolishLetters.Name = "checkBoxCapitalPolishLetters";
             this.checkBoxCapitalPolishLetters.Size = new System.Drawing.Size(121, 17);
             this.checkBoxCapitalPolishLetters.TabIndex = 20;
@@ -217,7 +219,7 @@
             // checkBoxSpecialSigns
             // 
             this.checkBoxSpecialSigns.AutoSize = true;
-            this.checkBoxSpecialSigns.Location = new System.Drawing.Point(362, 118);
+            this.checkBoxSpecialSigns.Location = new System.Drawing.Point(6, 106);
             this.checkBoxSpecialSigns.Name = "checkBoxSpecialSigns";
             this.checkBoxSpecialSigns.Size = new System.Drawing.Size(101, 17);
             this.checkBoxSpecialSigns.TabIndex = 21;
@@ -227,7 +229,7 @@
             // checkBoxAdditionalLogin
             // 
             this.checkBoxAdditionalLogin.AutoSize = true;
-            this.checkBoxAdditionalLogin.Location = new System.Drawing.Point(362, 177);
+            this.checkBoxAdditionalLogin.Location = new System.Drawing.Point(362, 195);
             this.checkBoxAdditionalLogin.Name = "checkBoxAdditionalLogin";
             this.checkBoxAdditionalLogin.Size = new System.Drawing.Size(52, 17);
             this.checkBoxAdditionalLogin.TabIndex = 22;
@@ -237,7 +239,7 @@
             // checkBoxAdditionalEmail
             // 
             this.checkBoxAdditionalEmail.AutoSize = true;
-            this.checkBoxAdditionalEmail.Location = new System.Drawing.Point(362, 200);
+            this.checkBoxAdditionalEmail.Location = new System.Drawing.Point(362, 218);
             this.checkBoxAdditionalEmail.Name = "checkBoxAdditionalEmail";
             this.checkBoxAdditionalEmail.Size = new System.Drawing.Size(51, 17);
             this.checkBoxAdditionalEmail.TabIndex = 23;
@@ -252,31 +254,41 @@
             this.buttonGenerate.TabIndex = 24;
             this.buttonGenerate.Text = "Generuj";
             this.buttonGenerate.UseVisualStyleBackColor = true;
+            this.buttonGenerate.Click += new System.EventHandler(this.buttonGenerate_Click);
             // 
             // checkBoxDigits
             // 
             this.checkBoxDigits.AutoSize = true;
-            this.checkBoxDigits.Location = new System.Drawing.Point(362, 141);
+            this.checkBoxDigits.Location = new System.Drawing.Point(6, 129);
             this.checkBoxDigits.Name = "checkBoxDigits";
             this.checkBoxDigits.Size = new System.Drawing.Size(49, 17);
             this.checkBoxDigits.TabIndex = 25;
             this.checkBoxDigits.Text = "Cyfry";
             this.checkBoxDigits.UseVisualStyleBackColor = true;
             // 
+            // groupBoxSignTypes
+            // 
+            this.groupBoxSignTypes.Controls.Add(this.checkBoxSpecialSigns);
+            this.groupBoxSignTypes.Controls.Add(this.checkBoxDigits);
+            this.groupBoxSignTypes.Controls.Add(this.checkBoxSmallLetters);
+            this.groupBoxSignTypes.Controls.Add(this.checkBoxCapitalLetters);
+            this.groupBoxSignTypes.Controls.Add(this.checkBoxSmallPolishLetters);
+            this.groupBoxSignTypes.Controls.Add(this.checkBoxCapitalPolishLetters);
+            this.groupBoxSignTypes.Location = new System.Drawing.Point(362, 26);
+            this.groupBoxSignTypes.Name = "groupBoxSignTypes";
+            this.groupBoxSignTypes.Size = new System.Drawing.Size(134, 150);
+            this.groupBoxSignTypes.TabIndex = 26;
+            this.groupBoxSignTypes.TabStop = false;
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 306);
-            this.Controls.Add(this.checkBoxDigits);
+            this.ClientSize = new System.Drawing.Size(506, 293);
+            this.Controls.Add(this.groupBoxSignTypes);
             this.Controls.Add(this.buttonGenerate);
             this.Controls.Add(this.checkBoxAdditionalEmail);
             this.Controls.Add(this.checkBoxAdditionalLogin);
-            this.Controls.Add(this.checkBoxSpecialSigns);
-            this.Controls.Add(this.checkBoxCapitalPolishLetters);
-            this.Controls.Add(this.checkBoxSmallPolishLetters);
-            this.Controls.Add(this.checkBoxCapitalLetters);
-            this.Controls.Add(this.checkBoxSmallLetters);
             this.Controls.Add(this.buttonClearAll);
             this.Controls.Add(this.buttonSave);
             this.Controls.Add(this.textBoxEmail);
@@ -294,6 +306,8 @@
             this.Name = "FormMain";
             this.Text = "FormMain";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownPasswordLength)).EndInit();
+            this.groupBoxSignTypes.ResumeLayout(false);
+            this.groupBoxSignTypes.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -323,5 +337,6 @@
         public System.Windows.Forms.CheckBox checkBoxAdditionalEmail;
         public System.Windows.Forms.Button buttonGenerate;
         public System.Windows.Forms.CheckBox checkBoxDigits;
+        public System.Windows.Forms.GroupBox groupBoxSignTypes;
     }
 }
