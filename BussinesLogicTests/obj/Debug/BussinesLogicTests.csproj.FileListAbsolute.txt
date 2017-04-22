@@ -11,3 +11,16 @@ C:\Users\PAN BB\Desktop\PasswordGenerator\BussinesLogicTests\bin\Debug\DataServi
 C:\Users\PAN BB\Desktop\PasswordGenerator\BussinesLogicTests\bin\Debug\EntityFramework.dll
 C:\Users\PAN BB\Desktop\PasswordGenerator\BussinesLogicTests\bin\Debug\DataServices.pdb
 C:\Users\PAN BB\Desktop\PasswordGenerator\BussinesLogicTests\bin\Debug\EntityFramework.xml
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\BussinesLogicTests.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\BussinesLogicTests.pdb
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\BussinesLogic.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\DataServices.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\EntityFramework.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\BussinesLogic.pdb
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\DataServices.pdb
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\bin\Debug\EntityFramework.xml
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\obj\Debug\BussinesLogicTests.csprojResolveAssemblyReference.cache
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\obj\Debug\BussinesLogicTests.dll
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\BussinesLogicTests\obj\Debug\BussinesLogicTests.pdb
