@@ -8,7 +8,6 @@ namespace BussinesLogic.Interfaces
 {
     interface IPasswordGenerator
     {
-        string GetPassword();
-        //string GetParams(int signsNumber, params bool[] sign);
+        string GeneratePassword();
     }
 }

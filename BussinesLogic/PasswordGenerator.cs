@@ -20,10 +20,6 @@ namespace BussinesLogic
             this._signTypes = signTypes;
             _pgTransformSigns = new BuilderPasswordGeneratorTransformSigns(this._signTypes);
         }
-        public string GetPassword()
-        {
-            return "";
-        }
 
         public string GeneratePassword()
         {
