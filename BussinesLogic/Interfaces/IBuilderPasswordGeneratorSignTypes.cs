@@ -10,6 +10,6 @@ namespace BussinesLogic.Interfaces
     {
         bool CompareSignTypeNameWithCheckBox(string checkBoxName, string signTypeName);
         string GetSignTypeNameByNumber(int number);
-        //bool GetSignTypeFromCheckBox(int signTypeNumber, string checkBoxSignTypeName, bool checkBoxSignTypeValue);
+        bool[] GetSignTypes(ref bool[] signTypes, int signTypesCount, string checkBoxSignTypeName, bool checkBoxSignTypeValue);
     }
 }

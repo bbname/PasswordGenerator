@@ -25,29 +25,16 @@ namespace BussinesLogic
             return signTypeName;
         }
 
-        //public bool GetSignTypeFromCheckBox(int signTypeNumber, string checkBoxSignTypeName, bool checkBoxSignTypeValue)
-        //{
-        //    bool signType = false;
-        //    string signTypeName = this.GetSignTypeNameByNumber(signTypeNumber);
-
-        //    if (this.CompareSignTypeNameWithCheckBox(checkBoxSignTypeName, signTypeName))
-        //    {
-        //        signType = checkBoxSignTypeValue;
-        //    }
-
-        //    return signType;
-        //}
-
-        public bool [] GetSignTypes(int signTypesCount, string checkBoxSignTypeName, bool checkBoxSignTypeValue)
+        public bool[] GetSignTypes(ref bool[] signTypes,int signTypesCount, string checkBoxSignTypeName, bool checkBoxSignTypeValue)
         {
-            bool [] signTypes = new bool[signTypesCount];
-
             for (int i = 0; i < signTypesCount; i++)
             {
                 string signTypeName = this.GetSignTypeNameByNumber(i);
+
                 if (this.CompareSignTypeNameWithCheckBox(checkBoxSignTypeName, signTypeName))
                 {
                     signTypes[i] = checkBoxSignTypeValue;
+                    break;
                 }
             }
 

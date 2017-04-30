@@ -28,31 +28,9 @@ namespace PasswordGenerator.ViewModel
         {
             bool[] signTypes = new bool [this._formMain.groupBoxSignTypes.Controls.Count];
 
-            foreach (var checkBox in this._formMain.groupBoxSignTypes.Controls)
-            {
-                if (checkBox is CheckBox)
-                {
-                    CheckBox checkBoxSignType = checkBox as CheckBox;
-                    BuilderPasswordGeneratorSignTypes pgSignTypes = new BuilderPasswordGeneratorSignTypes();
+            ControlsLogic.CheckBoxLogic checkBoxLogic = new ControlsLogic.CheckBoxLogic();
+            signTypes = checkBoxLogic.GetSignTypesFromCheckBoxes(this._formMain.groupBoxSignTypes.Controls, ref signTypes);
 
-                    signTypes = pgSignTypes.GetSignTypes(this._formMain.groupBoxSignTypes.Controls.Count,
-                        checkBoxSignType.Name, checkBoxSignType.Checked);
-
-
-                    //for (int i = 0; i < signsTypes.Length; i++)
-                    //{
-                    //    BuilderPasswordGeneratorSignTypes pgSignTypes = new BuilderPasswordGeneratorSignTypes();
-                    //    signsTypes[i] = pgSignTypes.GetSignTypeFromCheckBox(i, checkBoxSignType.Name, checkBoxSignType.Checked);
-                    //    //string signTypeName = pgSignTypes.GetSignTypeNameByNumber(i);
-
-                    //    //if (pgSignTypes.CompareSignTypeNameWithCheckBox(checkBoxSignType.Name, signTypeName))
-                    //    //{
-                    //    //    signsTypes[i] = checkBoxSignType.Checked;
-                    //    //    break;
-                    //    //}
-                    //}
-                }
-            }
             return signTypes;
         }
     }

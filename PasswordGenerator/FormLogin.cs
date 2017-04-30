@@ -20,6 +20,8 @@ namespace PasswordGenerator
         public FormLogin()
         {
             InitializeComponent();
+            textBoxLogin.Text = "test";
+            textBoxPassword.Text = "test";
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
