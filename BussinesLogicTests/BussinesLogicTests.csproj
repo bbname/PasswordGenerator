@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BuilderPasswordGeneratorSignTypesTests.cs" />
     <Compile Include="BuilderPasswordGeneratorRandomIndexesTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -57,6 +58,10 @@
     <ProjectReference Include="..\BussinesLogic\BussinesLogic.csproj">
       <Project>{fe263651-3af6-4a4b-9e2e-b0e193f599bf}</Project>
       <Name>BussinesLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DataServices\DataServices.csproj">
+      <Project>{00d56625-354a-4a32-b761-276bd342fdc3}</Project>
+      <Name>DataServices</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

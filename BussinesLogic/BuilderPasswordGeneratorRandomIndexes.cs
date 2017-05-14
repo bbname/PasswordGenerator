@@ -19,11 +19,9 @@ namespace BussinesLogic
             this._lastIndexNumber = lastIndexNumber;
             _random = new Random();
         }
-        private int GenerateRandomIndex()
+        public int GenerateRandomIndex()
         {
-            int randomIndex;
-
-            randomIndex = _random.Next(_lastIndexNumber);
+            int randomIndex = _random.Next(_lastIndexNumber);
 
             return randomIndex;
         }

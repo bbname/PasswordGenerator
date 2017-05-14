@@ -33,6 +33,6 @@ C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\De
 C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.xml
 C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.Extended.xml
 C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\obj\Debug\DataServices.csprojResolveAssemblyReference.cache
 C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\obj\Debug\DataServices.dll
 C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\obj\Debug\DataServices.pdb
+C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\obj\Debug\DataServices.csprojResolveAssemblyReference.cache

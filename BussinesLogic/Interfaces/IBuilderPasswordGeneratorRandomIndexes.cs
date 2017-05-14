@@ -8,7 +8,7 @@ namespace BussinesLogic.Interfaces
 {
     interface IBuilderPasswordGeneratorRandomIndexes
     {
-
+        int GenerateRandomIndex();
         IEnumerable<int> GetRandomIndexes();
 
     }
