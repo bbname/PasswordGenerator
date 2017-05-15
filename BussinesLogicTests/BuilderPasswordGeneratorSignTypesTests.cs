@@ -125,10 +125,9 @@ namespace BussinesLogicTests
         }
 
         [TestMethod]
-        public void GetSignTypeNameByNumber_OtherNumberAsParam_DifferentSignTypeNames()
+        public void GetSignTypeNameByNumber_OthersNumbersInSignTypeRange_DifferentSignTypeNames()
         {
             // Arrange
-            int smallLetters = 0;
             int capitalLetters = 1;
             SignTypes expectedSignType = SignTypes.SmallLetters;
             string expectedSignTypeName = expectedSignType.ToString();
@@ -142,10 +141,9 @@ namespace BussinesLogicTests
         }
 
         [TestMethod]
-        public void GetSignTypeNameByNumber_NegativeNumberAsParam_WrongSignTypeName()
+        public void GetSignTypeNameByNumber_NegativeNumberOutOfSignTypeRange_WrongSignTypeName()
         {
             // Arrange
-            int smallLetters = 0;
             int negativeNumber = -1;
             SignTypes expectedSignType = SignTypes.SmallLetters;
             string expectedSignTypeName = expectedSignType.ToString();
@@ -156,6 +154,98 @@ namespace BussinesLogicTests
 
             // Assert
             Assert.AreNotEqual(expectedSignTypeName, actualSignTypeName);
+        }
+
+        [TestMethod]
+        public void GetSignTypeNameByNumber_PositiveNumberOutOfSignTypeRange_WrongSignTypeName()
+        {
+            // Arrange
+            int numberOutOfRange = 50;
+            SignTypes expectedSignType = SignTypes.SmallLetters;
+            string expectedSignTypeName = expectedSignType.ToString();
+            var signTypes = new BuilderPasswordGeneratorSignTypes();
+
+            // Act
+            string actualSignTypeName = signTypes.GetSignTypeNameByNumber(numberOutOfRange);
+
+            // Assert
+            Assert.AreNotEqual(expectedSignTypeName, actualSignTypeName);
+        }
+
+        [TestMethod]
+        public void GetSortedSignTypes_6SignTypesAndCheckBoxSmallLettersWithTrueValue_CorrectSort()
+        {
+            // Arrange
+            int signTypeToSortCount = 6;
+            bool[] signTypesToSort = new bool[signTypeToSortCount];
+            string checkBoxSignTypeName = "checkBoxSmallLetters";
+            bool checkBoxSignTypeValue = true;
+            var signTypes = new BuilderPasswordGeneratorSignTypes();
+            bool[] expectedSignTypesToSort = new bool[] {true, false, false, false, false, false};
+
+            // Act
+            signTypesToSort = signTypes.GetSortedSignTypes(ref signTypesToSort, signTypeToSortCount,
+                checkBoxSignTypeName, checkBoxSignTypeValue);
+
+            // Assert
+            CollectionAssert.AreEqual(expectedSignTypesToSort, signTypesToSort);
+        }
+
+        [TestMethod]
+        public void GetSortedSignTypes_6SignTypesAndCheckBoxSpecialSignsWithTrueValue_CorrectSort()
+        {
+            // Arrange
+            int signTypeToSortCount = 6;
+            bool[] signTypesToSort = new bool[signTypeToSortCount];
+            string checkBoxSignTypeName = "checkBoxSpecialSigns";
+            bool checkBoxSignTypeValue = true;
+            var signTypes = new BuilderPasswordGeneratorSignTypes();
+            bool[] expectedSignTypesToSort = new bool[] { false, false, false, false, true, false };
+
+            // Act
+            signTypesToSort = signTypes.GetSortedSignTypes(ref signTypesToSort, signTypeToSortCount,
+                checkBoxSignTypeName, checkBoxSignTypeValue);
+
+            // Assert
+            CollectionAssert.AreEqual(expectedSignTypesToSort, signTypesToSort);
+        }
+
+        [TestMethod]
+        public void GetSortedSignTypes_6SignTypesWithTrueValuesAndWrongCheckBoxNameWithFalseValue_CorrectSort()
+        {
+            // Arrange
+            int signTypeToSortCount = 6;
+            bool[] signTypesToSort = new bool[] { true, true, true, true, true, true };
+            string checkBoxSignTypeName = "checkBoxWrongName";
+            bool checkBoxSignTypeValue = false;
+            var signTypes = new BuilderPasswordGeneratorSignTypes();
+            bool[] expectedSignTypesToSort = new bool[] { true, true, true, true, true, true };
+
+            // Act
+            signTypesToSort = signTypes.GetSortedSignTypes(ref signTypesToSort, signTypeToSortCount,
+                checkBoxSignTypeName, checkBoxSignTypeValue);
+
+            // Assert
+            CollectionAssert.AreEqual(expectedSignTypesToSort, signTypesToSort);
+        }
+
+        [TestMethod]
+        public void GetSortedSignTypes_2SignTypesWithTrueValuesAndCheckBoxDigitsWithFalseValue_CorrectSort()
+        {
+            // Arrange
+            int signTypeToSortCount = 2;
+            bool[] signTypesToSort = new bool[] { true, true };
+            string checkBoxSignTypeName = "checkBoxDigits";
+            bool checkBoxSignTypeValue = false;
+            var signTypes = new BuilderPasswordGeneratorSignTypes();
+            bool[] expectedSignTypesToSort = new bool[] { true, true };
+
+            // Act
+            signTypesToSort = signTypes.GetSortedSignTypes(ref signTypesToSort, signTypeToSortCount,
+                checkBoxSignTypeName, checkBoxSignTypeValue);
+
+            // Assert
+            CollectionAssert.AreEqual(expectedSignTypesToSort, signTypesToSort);
         }
 
 

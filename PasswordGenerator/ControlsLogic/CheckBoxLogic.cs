@@ -41,7 +41,7 @@ namespace PasswordGenerator.ControlsLogic
                 CheckBox checkBoxSignType = this.GetSignTypeCheckBox(checkBox);
                 BuilderPasswordGeneratorSignTypes pgSignTypes = new BuilderPasswordGeneratorSignTypes();
 
-                signTypes = pgSignTypes.GetSignTypes(ref signTypes, groupCheckBoxes.Count,
+                signTypes = pgSignTypes.GetSortedSignTypes(ref signTypes, groupCheckBoxes.Count,
                         checkBoxSignType.Name, checkBoxSignType.Checked);
             }
 

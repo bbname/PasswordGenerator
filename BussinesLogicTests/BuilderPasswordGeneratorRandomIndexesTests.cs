@@ -59,7 +59,7 @@ namespace BussinesLogicTests
         }
 
         [TestMethod]
-        public void GetRandomIndexes_AmmountOfIndexes()
+        public void GetRandomIndexes_AmmountOfIndexesIsPositive_NumberOfIndexesIsCorrect()
         {
             // Arrange
             int passwordLength = 20;
@@ -75,7 +75,7 @@ namespace BussinesLogicTests
         }
 
         [TestMethod]
-        public void GetRandomIndexes_AreAllIndexesInRange()
+        public void GetRandomIndexes_AllIndexesArePositive_AllIndexesAreInLastIndexRange()
         {
             // Arrange
             int passwordLength = 20;
@@ -95,7 +95,7 @@ namespace BussinesLogicTests
 
         [TestMethod]
         [ExpectedException(typeof(OverflowException))]
-        public void GetRandomIndexes_IsAmmountOfIndexesNegative_Throws()
+        public void GetRandomIndexes_AmmountOfIndexesIsNegative_ExceptionThrown()
         {
             // Arrange
             int passwordLength = -20;
@@ -112,7 +112,7 @@ namespace BussinesLogicTests
 
         [TestMethod]
         [ExpectedException(typeof(ArgumentOutOfRangeException))]
-        public void GetRandomIndexes_AreAllIndexesNegative_Throws()
+        public void GetRandomIndexes_AllIndexesAreNegative_ExceptionThrown()
         {
             // Arrange
             int passwordLength = 20;

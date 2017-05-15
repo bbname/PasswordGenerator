@@ -25,7 +25,7 @@ namespace BussinesLogic
             return signTypeName;
         }
 
-        public bool[] GetSignTypes(ref bool[] signTypes,int signTypesCount, string checkBoxSignTypeName, bool checkBoxSignTypeValue)
+        public bool[] GetSortedSignTypes(ref bool[] signTypes,int signTypesCount, string checkBoxSignTypeName, bool checkBoxSignTypeValue)
         {
             for (int i = 0; i < signTypesCount; i++)
             {

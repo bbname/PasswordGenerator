@@ -21,7 +21,6 @@ C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\bin\Debug\EntityFramework
 C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\bin\Debug\EntityFramework.xml
 C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\bin\Debug\EntityFramework.Extended.xml
 C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\obj\Debug\DataServices.csprojResolveAssemblyReference.cache
 C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\obj\Debug\DataServices.dll
 C:\Users\PAN BB\Desktop\PasswordGenerator\DataServices\obj\Debug\DataServices.pdb
 C:\Users\bb_name\Desktop\PasswordGenerator\PasswordGenerator\DataServices\bin\Debug\DataServices.dll.config
